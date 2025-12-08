@@ -1,0 +1,129 @@
+<meta charset="UTF-8">
+  <title>Job Application Form</title>
+  <link rel="stylesheet"href="validateform.css">
+  <style>
+    #a{
+        border: 2px solid black;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+    }
+    form{
+        padding: 20px ;
+        background-color: antiquewhite;
+
+    }
+    body{
+        
+            justify-content: center;
+            align-items: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            background-image: url("pro.jpg");
+            background-size: cover;
+    }
+    button[type="button"] {
+			background-color: #4CAF50;
+			color:whitesmoke;
+			margin-left:35%;
+            margin-right: 35%;
+			border:2px solid #340606;
+			border-radius: 5px;
+			cursor: pointer;
+        }
+        .h1{
+            text-align: center;
+        
+        }
+        
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Job Application Form</h1>
+    <form id="a">
+      <div class="form-group">
+        <label for="name"><b>Name:</b></label>
+        <input type="text" id="name" placeholder="Enter your name"required><br><br>
+        <div class="error" id="nameError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label><b>Qualification</b> </label>
+        
+        <select id="qualification">
+          <option value="">Select Qualification</option>
+          <option value="SSC">SSC</option>
+          <option value="Inter">Inter</option>
+          <option value="Degree">Degree</option>
+        </select><br><br>
+        <div class="error" id="qualificationError"></div>
+      </div>
+      
+      <div class="form-group-inline">
+        <label><b>Gender:</b></label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <div class="error" id="genderError"></div><br><br>
+      </div>
+      
+      <div class="form-group">
+        <label><b>Apply for:</b></label>
+        <select id="position">
+          <option value="">Select Position</option>
+          <option value="Analyst">Analyst</option>
+          <option value="Developer">Developer</option>
+          <option value="Administrator">Administrator</option>
+          <option value="Data Scientist">Data Scientist</option>
+        </select><br><br>
+        <div class="error" id="positionError"></div>
+      </div>
+      
+      <button type="button" onclick="validateForm()">Submit</button>
+      <div class="success" id="successMessage"></div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+        document.getElementById("nameError").innerHTML = "";
+        document.getElementById("qualificationError").innerHTML = "";
+        document.getElementById("genderError").innerHTML = "";
+        document.getElementById("positionError").innerHTML = "";
+        document.getElementById("successMessage").innerHTML = "";
+    
+        const name = document.getElementById("name").value.trim();
+        const qualification = document.getElementById("qualification").value;
+        const gender = document.querySelector('input[name="gender"]:checked');
+        const position = document.getElementById("position").value;
+        
+        let isValid = true;
+        
+        if (name === "") {
+          document.getElementById("nameError").innerHTML = "Name is required";
+          isValid = false;
+        }
+    
+        if (qualification === "") {
+          document.getElementById("qualificationError").innerHTML = "Please select a qualification";
+          isValid = false;
+        }
+      
+        if (!gender) {
+          document.getElementById("genderError").innerHTML = "Please select your gender";
+          isValid = false;
+        }
+      
+        if (position === "") {
+          document.getElementById("positionError").innerHTML = "Please select a position to apply for";
+          isValid = false;
+        }
+      
+        if (isValid) {
+          document.getElementById("successMessage").innerHTML = "Application Submitted Successfully!";
+        }
+      }
+      
+    </script>
+</body>
+</html>

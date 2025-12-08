@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            border: 2px solid black;
+            width: 350px;
+            height: 280px;
+            border-radius: 10px;
+          
+        }
+        input[type="text"],input[type="mail"]{
+            width:80%;
+        }
+        form{
+            padding: 20px ;
+            
+           
+        }
+        body{
+            justify-content: center;
+            align-items: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            background-image: url("pro.jpg");
+           
+        }
+        h1{
+            text-align: center;
+        }
+        .b{
+            justify-content: center;
+        }
+            button[type="submit"] {
+			background-color: #4CAF50;
+			color:whitesmoke;
+			margin-left:35%;
+            margin-right: 35%;
+			border:2px solid #340606;
+			border-radius: 5px;
+			cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <div class="a">
+    <form>
+ <div class="form-group"><label for="name"><b>Name:</b></label>
+   <input type="text"  name="username"/><br><br>
+   <div class="error" id="nameError"></div>
+ </div>
+ <div><label for="mail"><b>Mail:</b></label>
+   <input type="Mail" name="mail Id"><br><br>
+   <div class="error" id="MailError"></div>
+ </div>
+ <div class="form-group">
+    <label><b> Qualification:</b></label>
+    <select id="qualification">
+      <option value="">Select Qualification</option>
+      <option value="SSC">SSC</option>
+      <option value="Inter">Inter</option>
+      <option value="Degree">Degree</option>
+    </select><br><br>
+    <div class="error" id="qualificationError"></div>
+  </div>
+
+<div class="form-group"> <label for="gender"><b>Gender:</b></label>
+   <input type="radio" name="gender">mele
+   <input type="radio" name="gender">female<br><br>
+   <div class="error" id="genderError"></div>
+</div>
+  <div class="form-group"><b> Apply for:</b><select name="position">
+    <option>Tester</option>
+    <option>Developer</option>
+    <option>data analyst</option>
+    <option>designer</option>
+   </select><br><br>
+   <div class="error" id="positionError"></div></div>
+   <div class="b"><button type="submit" onclick="validateForm()">Submit</button></div>
+   <div class="success" id="successMessage"></div>
+</form>
+</div>
+
+  <script src="leave.js"></script>  
+</body>
+</html>

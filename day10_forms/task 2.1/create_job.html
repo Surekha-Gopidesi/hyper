@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Opening Form</title>
+	<link rel="stylesheet" href="create_job.css">
+	
+</head>
+<body>
+	<div class="job-opening-form">
+		<h1 id="j">Job Opening Application Form</h1>
+		<div class="h"><form>
+			
+				<div class="a"><h2> Enter Job Details </h2></div>
+				<label for="job-title">Job Title:</label>
+				<input type="text" placeholder="Entre your job title"></input>
+				
+				</select>
+				<div class="form-group">
+					<label for="type" >Type:</label>
+					<select id="type" name="type" required>
+						<option value="">Select Type</option>
+						<option value="full-time">Full-time</option>
+						<option value="part-time">Part-time</option>
+						<option value="internship">Internship</option>
+					</select>
+				</div>
+				<label for="department">Department:</label> 
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="non it">NON IT</option>
+                    <option value="it"> IT and Infrastructure</option>
+                </select>
+            </div>
+				<label for="country">country</label>
+				<select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="india">INDIA</option>
+                    <option value="france">FRANCE</option>
+                    <option value="uk">UK</option>
+                    <option value="usa">USA</option>
+                </select>
+				
+			</section>
+			<section>
+				<label for="education">Highest Education:</label>
+				<select id="education" name="education" required>
+					<option value="">Select Education</option>
+					<option value="Bachelor's Degree">Bachelor's Degree</option>
+					<option value="Master's Degree">Master's Degree</option>
+					<option value="Ph.D.">Ph.D.</option>
+				</select>
+				<label for="Description">description:</label>
+				<textarea id="Description" name="description" required></textarea>
+				<div class="form-group">
+					<label for="opening-date">Opening Date</label>
+					<input type="date" id="opening-date" name="opening-date" required>
+				</div>
+                
+			</section>
+			
+            <div class="sub">
+			<button type="submit" align:center>Submit Application</button>
+        </div>
+        </form></div>
+	</div>
+	<script defer src="script.js"></script>
+</body>
+</html>
