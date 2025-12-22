@@ -1,0 +1,93 @@
+.contain{
+    position:relative;
+}
+h1{
+   color:white;
+    position:absolute;
+    top:0px;
+    margin-left: 550px;
+    margin-top:350px;
+    
+}
+b{
+     background-color: black;
+    padding:2px;
+    color:white;
+}
+.container1{
+    /* border:1px,solid; */
+    width:1200px;
+    height: 700px;;
+}
+.container2{
+     /* border:1px,solid; */
+    width:1200px;
+    height: 220px;
+    margin: 10px;
+    padding:15px;
+}
+.container3{
+     /* border:1px,solid; */
+    width:1200px;
+    height: 220px;
+      margin: 10px;
+       padding:15px;
+}
+.c{
+    display: inline-block;
+    margin:5px;
+}
+.c1{
+    /* border:1px,solid; */
+    width:280px;
+    height: 300px;
+    position:relative;
+    
+}
+.c2{
+    /* border:1px,solid; */
+   width:280px;
+    position:relative;
+}
+.c3{
+    /* border:1px,solid; */
+     width:280px;
+    position:relative;
+   
+}
+.c4{
+    /* border:1px,solid; */
+    width:280px;
+    position:relative;
+ 
+}
+.c5{
+    /* border:1px,solid; */
+    width:280px;
+    position:relative;
+    
+}
+.c6{
+    /* border:1px,solid; */
+    width:280px;
+    position:relative;
+}
+.c7{
+    /* border:1px,solid; */
+    width:280px;
+    position:relative;
+   
+}
+.c8{
+    /* border:1px,solid; */
+     width:280px;
+    position:relative;
+ 
+}
+h2{
+    background-color: black;
+    color:white;
+    position:absolute;
+    margin:0px;
+    top:0px;
+}
