@@ -1,7 +1,7 @@
 .container{
     position:relative;
     height: 900px;
-
+width:100%;
 }
 h2{
    color:white;
@@ -15,4 +15,5 @@ b{
      background-color: black;
     padding:2px;
     color:white;
+
 }
