@@ -13,13 +13,7 @@
  position:fixed;
     
 }
-.child12{
-    /* border: 2px solid pink;
-    overflow: scroll;
-     */
-    position:fixed;
-    bottom:0px;
-}
+
 .child11{
     width:280px;
     height: 70px;
@@ -97,4 +91,5 @@ img{
  
 
 }
+
 
