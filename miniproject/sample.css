@@ -17,6 +17,7 @@
     /* border: 2px solid pink;
     overflow: scroll;
      */
+    position:relative;
 }
 .child11{
     width:280px;
@@ -93,4 +94,5 @@ img{
     background-color: white;
     background-color: rgb(157, 245, 137);
  
+
 }
