@@ -17,7 +17,8 @@
     /* border: 2px solid pink;
     overflow: scroll;
      */
-    position:relative;
+    position:fixed;
+    bottom:0px;
 }
 .child11{
     width:280px;
@@ -96,3 +97,4 @@ img{
  
 
 }
+
